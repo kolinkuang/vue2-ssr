@@ -2,7 +2,6 @@
   "name": "vue2-ssr",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "dependencies": {
     "core-js": "^2.6.5",
     "express": "^4.17.1",
@@ -31,13 +30,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kolinkuang/web-full-stack-27.git"
+    "url": "git+https://github.com/kolinkuang/vue2-ssr.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kolinkuang/web-full-stack-27/issues"
+    "url": "https://github.com/kolinkuang/vue2-ssr/issues"
   },
-  "homepage": "https://github.com/kolinkuang/web-full-stack-27#readme"
+  "homepage": "https://github.com/kolinkuang/vue2-ssr#readme",
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  }
 }

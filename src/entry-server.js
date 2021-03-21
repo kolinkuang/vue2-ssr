@@ -5,7 +5,7 @@ import createApp from './main';
 export default context => {
     return new Promise((resolve, reject) => {
         // to get router and app instances
-        const {app, router} = createApp();
+        const {app, router} = createApp(context);
 
         // to get first screen URL
         router.push(context.url);

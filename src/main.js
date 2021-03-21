@@ -12,7 +12,7 @@ export default function createApp(context) {
         router,
         context,
         render(h) {
-            h(App);
+            return h(App);
         }
     });
     return {
