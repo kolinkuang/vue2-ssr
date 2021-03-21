@@ -25,6 +25,7 @@ app.get('*', async (req, res) => {
         const context = {
             url: req.url
         }
+        // will call src/entry-server.js:createRouter() from inside in the future
         const html = await renderer.renderToString(context)
         res.send(html)
     } catch (error) {

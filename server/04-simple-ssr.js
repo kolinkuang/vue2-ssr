@@ -12,14 +12,14 @@ const renderer = createRenderer()
 // router
 app.get('/', async (req, res) => {
     // create a vue app
-    // const vm = new Vue({
-    //     template: '<div>hello {{name}}</div>',
-    //     data() {
-    //         return {
-    //             name: 'guys'
-    //         }
-    //     }
-    // })
+    const vm = new Vue({
+        template: '<div>hello {{name}}</div>',
+        data() {
+            return {
+                name: 'guys'
+            }
+        }
+    })
 
     try {
         const html = await renderer.renderToString(vm)
