@@ -2,6 +2,13 @@
   "name": "vue2-ssr",
   "version": "1.0.0",
   "description": "",
+  "author": "",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "npm run build:server && npm run build:client",
+    "build:client": "vue-cli-service build",
+    "build:server": "cross-env WEBPACK_TARGET=node vue-cli-service build"
+  },
   "dependencies": {
     "core-js": "^2.6.5",
     "express": "^4.17.1",
@@ -22,26 +29,19 @@
     "vue-template-compiler": "^2.6.10",
     "webpack-node-externals": "^1.7.2"
   },
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "npm run build:server && npm run build:client",
-    "build:client": "vue-cli-service build",
-    "build:server": "cross-env WEBPACK_TARGET=node vue-cli-service build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kolinkuang/vue2-ssr.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kolinkuang/vue2-ssr/issues"
-  },
-  "homepage": "https://github.com/kolinkuang/vue2-ssr#readme",
   "postcss": {
     "plugins": {
       "autoprefixer": {}
     }
+  },
+  "bugs": {
+    "url": "https://github.com/kolinkuang/vue2-ssr/issues"
+  },
+  "homepage": "https://github.com/kolinkuang/vue2-ssr#readme",
+  "keywords": [],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolinkuang/vue2-ssr.git"
   }
 }
